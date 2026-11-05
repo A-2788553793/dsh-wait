@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Send Confirmation",
+    "description": "Asks for confirmation before a chat message is sent."
+  }
+}
