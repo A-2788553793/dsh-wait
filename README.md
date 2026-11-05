@@ -58,24 +58,6 @@ DSH 客户端没有暴露发送拦截 API，因此插件在 `apply` 中安装 do
 - 依赖宿主 DOM 结构（`data-composer-card` / `data-composer-overlay` / 按钮顺序）；DSH 改版后守卫可能自动失效（不会报错）
 - 通过输入框以外的入口（非 composer）触发的消息不受此插件影响
 
-## 开发
-
-在本地 clone 仓库后，把插件目录以 link 方式装入 DSH profile 进行联调（把 `<path>` 替换为你本机的插件目录）：
-
-```text
-plugin_manager action=install_bundle target="<path>/dsh-wait"
-```
-
-修改 `client.js` 后强制刷新页面即可生效，无需重新安装。
-
-## 发布
-
-维护者发布新版本：
-
-```bash
-npm version patch   # 或 minor / major
-npm publish --access public
-```
 
 ## License
 
