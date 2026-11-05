@@ -60,15 +60,17 @@ DSH 客户端没有暴露发送拦截 API，因此插件在 `apply` 中安装 do
 
 ## 开发
 
-本地联调时把插件目录以 link 方式装入 DSH profile：
+在本地 clone 仓库后，把插件目录以 link 方式装入 DSH profile 进行联调（把 `<path>` 替换为你本机的插件目录）：
 
 ```text
-plugin_manager action=install_bundle target="E:\\DshWP\\3\\dsh-wait"
+plugin_manager action=install_bundle target="<path>/dsh-wait"
 ```
 
 修改 `client.js` 后强制刷新页面即可生效，无需重新安装。
 
 ## 发布
+
+维护者发布新版本：
 
 ```bash
 npm version patch   # 或 minor / major

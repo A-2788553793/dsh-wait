@@ -1,6 +1,6 @@
 {
   "name": "dsh-wait",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Confirm before sending a chat message in DeepSeek Harness Web UI.",
   "type": "module",
   "license": "MIT",
